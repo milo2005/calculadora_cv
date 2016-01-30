@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@id/resultado"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/txt_resultado"
+        android:text="@string/txt_resultado"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:id="@+id/numero1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_n1"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@id/numero2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_n2"
+            android:inputType="number"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/sumar"
+                android:layout_width="@dimen/btn_wh"
+                android:layout_height="@dimen/btn_wh"
+                android:text="@string/btn_sumar"
+                />
+
+            <Button
+                android:id="@+id/restar"
+                android:layout_width="@dimen/btn_wh"
+                android:layout_height="@dimen/btn_wh"
+                android:text="@string/btn_restar"
+                />
+            <Button
+                android:id="@+id/div"
+                android:layout_width="@dimen/btn_wh"
+                android:layout_height="@dimen/btn_wh"
+                android:text="@string/btn_dividir"
+                />
+            <Button
+                android:id="@+id/mul"
+                android:layout_width="@dimen/btn_wh"
+                android:layout_height="@dimen/btn_wh"
+                android:text="@string/btn_multiplicar"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

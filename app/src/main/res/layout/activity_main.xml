@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="Numero 1"
+        android:hint="@string/hint_n1"
         />
 
     <EditText
@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="Numero 2"
+        android:hint="@string/hint_n2"
         />
 
     <LinearLayout
@@ -35,28 +35,28 @@
 
         <Button
             android:id="@+id/sumar"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text="Sumar"
+            android:layout_width="@dimen/btn_wh"
+            android:layout_height="@dimen/btn_wh"
+            android:text="@string/btn_sumar"
             />
 
         <Button
             android:id="@+id/restar"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text="Restar"
+            android:layout_width="@dimen/btn_wh"
+            android:layout_height="@dimen/btn_wh"
+            android:text="@string/btn_restar"
             />
         <Button
             android:id="@+id/div"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text="Div"
+            android:layout_width="@dimen/btn_wh"
+            android:layout_height="@dimen/btn_wh"
+            android:text="@string/btn_dividir"
             />
         <Button
             android:id="@+id/mul"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text="Mul"
+            android:layout_width="@dimen/btn_wh"
+            android:layout_height="@dimen/btn_wh"
+            android:text="@string/btn_multiplicar"
             />
 
 
@@ -67,9 +67,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:textSize="100sp"
+        android:textSize="@dimen/txt_resultado"
 
-        android:text="00"/>
+        android:text="@string/txt_resultado"/>
 
 
 </LinearLayout>
